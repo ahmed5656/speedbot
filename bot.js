@@ -307,7 +307,7 @@ client.on('guildCreate', guild => {
   New Server Add HEMA Bot ✅
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
-client.channels.get("467833183254347797").sendEmbed(embed)
+client.channels.get("482390665494265856").sendEmbed(embed)
 });
 
 client.on('guildDelete', guild => {
@@ -319,7 +319,7 @@ client.on('guildDelete', guild => {
   Server Kicked HEMA Bot :cry:
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
-client.channels.get("467833183254347797").sendEmbed(embed)
+client.channels.get("482390665494265856").sendEmbed(embed)
 });
  
 
