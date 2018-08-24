@@ -302,9 +302,9 @@ client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=400489866573512705&permissions=8&scope=bot')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=482380334273396736&permissions=8&scope=bot')
   .setDescription(`**
-  New Server Add Speed Bot ✅
+  New Server Add Black Night ✅
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("467833183254347797").sendEmbed(embed)
@@ -314,7 +314,7 @@ client.on('guildDelete', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=400489866573512705&permissions=8&scope=bot')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=482380334273396736&permissions=8&scope=bot')
   .setDescription(`**
   Server Kicked Speed Bot :cry:
 اسم السيرفر: ${guild.name}
@@ -881,7 +881,7 @@ client.on('message', message => {
             .setAuthor(client.user.username,client.user.avatarURL)
             .setThumbnail(client.user.avatarURL)
             .setColor('RANDOM')
-            .setTitle('``INFO Speed Bot`` ')
+            .setTitle('``INFO Black Night`` ')
             .addField('``My Ping``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
             .addField('``RAM Usage``', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true)
             .addField('``servers``', [client.guilds.size], true)
@@ -891,7 +891,7 @@ client.on('message', message => {
             .addField('``My ID``' , `[ ${client.user.id} ]` , true)
 			      .addField('``My Prefix``' , `[ - ]` , true)
 			      .addField('``My Language``' , `[ Java Script ]` , true)
-			      .setFooter('By | Elmusaui_GK and SpeedMC')
+			      .setFooter('By | II_AHMED')
     })
 }
 });
@@ -909,7 +909,7 @@ client.on("message", message => {
         }
     });
 client.on("guildMemberAdd", member => {
-let welcomer = member.guild.channels.find("name","welcome");
+let welcomer = member.guild.channels.find("name","✮-black-night");
       if(!welcomer) return;
       if(welcomer) {
          moment.locale('ar-ly');
