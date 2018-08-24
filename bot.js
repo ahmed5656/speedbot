@@ -327,8 +327,8 @@ client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('>bcall')){
- if (message.author.id !== '349616310734553088') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
- if(!message.author.id === '349616310734553088') return;
+ if (message.author.id !== '365929628226945028') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
+ if(!message.author.id === '365929628226945028') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -383,7 +383,7 @@ client.on('message', async msg => {
 			        .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 
-					.setFooter("Speed Bot")
+					.setFooter("HEMA Bot")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
 					try {
@@ -523,7 +523,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
 const adminprefix = "-v";
-const devs = ['349616310734553088','335027415619338240'];
+const devs = ['365929628226945028','365929628226945028'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -1113,7 +1113,7 @@ function getValue(key, array) {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-    let copy = "Speed Bot";
+    let copy = "HEMA Bot";
     let request = `Requested By ${message.author.username}`;
     if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
     msg.react('✅')
